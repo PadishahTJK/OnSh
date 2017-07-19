@@ -10,8 +10,12 @@ var core_1 = require("@angular/core");
 var ProductFilterPipe = (function () {
     function ProductFilterPipe() {
     }
+    // Our goal  is  transform passed  list of IProduct[]  into  filterList based  on what  user entered
     ProductFilterPipe.prototype.transform = function (value, filterBy) {
         filterBy = filterBy ? filterBy.toLocaleLowerCase() : null;
+        // if our filterBy has  value  and is not  Null 
+        //then we r  filter list 
+        //otherwise  returning  original value 
         return filterBy ? value.filter(function (product) {
             return product.productName.toLocaleLowerCase().indexOf(filterBy) !== -1;
         }) : value;

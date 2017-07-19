@@ -14,6 +14,8 @@ var app_component_1 = require("./app.component");
 var welcome_component_1 = require("./home/welcome.component");
 /* Feature Modules */
 var product_module_1 = require("./products/product.module");
+/* ContactsComponent */
+var contacts_component_1 = require("./contacts/contacts.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -33,7 +35,8 @@ AppModule = __decorate([
         ],
         declarations: [
             app_component_1.AppComponent,
-            welcome_component_1.WelcomeComponent
+            welcome_component_1.WelcomeComponent,
+            contacts_component_1.ContactsComponent
         ],
         bootstrap: [app_component_1.AppComponent]
     })

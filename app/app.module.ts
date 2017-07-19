@@ -6,8 +6,12 @@ import { RouterModule } from '@angular/router';
 import { AppComponent }  from './app.component';
 import { WelcomeComponent } from './home/welcome.component';
 
+
 /* Feature Modules */
 import { ProductModule } from './products/product.module';
+/* ContactsComponent */
+import{ContactsComponent} from './contacts/contacts.component';
+
 
 @NgModule({
   imports: [
@@ -22,7 +26,8 @@ import { ProductModule } from './products/product.module';
   ],
   declarations: [
     AppComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ContactsComponent
   ],
   bootstrap: [ AppComponent ]
 })
